@@ -8,21 +8,10 @@ I created TravelXOXO because it is the map that I always wanted.  
 
 
 xxxxxxxxxxxxxxxxxxxxxxxxxx
-Installation Instructions:
+Importing Data
 xxxxxxxxxxxxxxxxxxxxxxxxxx
 
-You are welcome to run TravelXOXO in your xCode simulator.  Alternatively, feel free to request the ipa file, which would allow you to install it on your iPhone or iPad, and to import data to play with.  (There isn't much to look at without any data.)  The disadvantage, of course, is that we would have to deal with provisioning, which isn't much fun.    
-
-  
-You will use iTunes, using your Mac, to install the app.
-1) connect your iPhone/iPad to your Mac
-2) double click on the TravelXOXO.ipa file 
-3) open iTunes
-4) In iTunes, click the device button in the upper-right corner of the window.
-5) Select the Apps button.  The TravelXOXO (a.k.a. CSFriends) appears in the iTunes app list.  Click install.
-6) Click Apply (bottom right)
-
-Import Data (it is nice to have a little bit of data to play with)
+It is nice to have a little bit of data to play with.  Feel free to request data files to play with.  I can email them to you.
 1) on your iPhone/iPad open your email and find the email with the archive file in it
 2) double click on the archive file
 3) follow directions
