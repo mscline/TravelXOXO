@@ -152,7 +152,6 @@
 // option for delete all pins for trip (vs just the label)?
 
 // KNOWN ISSUES:
-// pointer to playing music lost upon deactivation, then can't cancel it upon reload ????
 
 // if change name/title of a location which is marked as the final destination, it will not update the final destination (not a big deal, but would be nice to address)
 
@@ -361,7 +360,7 @@
     // when exit tagViewController, it will save the list of tags and run viewDidAppear
     //   which will rebuild everything else from the ground up
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Data Import Complete" message:@"Before returning to the main screen, select the tags you wish to view.\n\nPlease note that all imported locations have been given a tag showing you the date they were imported.  This alows you to easily locate your imported locations.  After you are done organizing your new locations, you may wish to delete the tag." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Data Import Complete" message:@"Before returning to the main screen, select the tags you wish to view.\n\nPlease note that all imported pins have been given a tag showing you the date they were imported.  This alows you to easily locate your imported pins.  After you are done organizing your new pins, you may wish to delete this tag." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     [alert show];
     
     [self performSegueWithIdentifier:@"toSelectTagViewController" sender:filterByTagButton];
@@ -729,7 +728,7 @@
    // to put functionality back in play, just un-comment-out above text
    // see known issues (top)
     
-    actionSheetPinOptions = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"SHARE LOCATIONS:", @"For Selected Tags", @"Selected Locations", @" ", @"About", nil];
+    actionSheetPinOptions = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"SHARE PINS:", @"For Selected Tags", @"Selected Pins", @" ", @"About", nil];
     
     [actionSheetPinOptions showInView:self.view];
 
@@ -794,7 +793,7 @@
         rtn = @"\n";
     }
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Exporting Locations For Selected Tags:" message:str delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Exporting Pins With Selected Tags:" message:str delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
     [alert show];
     
     // create archive file and active activity view / share screen
@@ -820,7 +819,7 @@
     // if no selected pins, notify user and exit
     if([selectedPins count]==0){
         
-        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Please make selection:" message:@"Before exporting data, please select the locations you would like to share." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Please make selection:" message:@"Before exporting data, please select the pins you would like to share." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
         [alert show];
         
     }else{

@@ -329,7 +329,7 @@
                 
             }
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:str message:@"When you select a tag, you are selecting a group of locations.  To add the imported locations with a tag \"Europe,\" for example, to your tags labelled \"Europe,\" select Merge.  Otherwise, select Rename Imported Tags.\n\nYou are free to edit tags names, after you have completed the import.  The edit button in the upper right corner of your screen.  \n\nTo merge manually: Rename tag to same name as the tag you wish to merge with, thus changing the tag attached to all corresponding locations.  Then delete it, leaving only one tag.)" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles: @"Merge Tags", @"Rename Imported Tags", nil];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:str message:@"When you select a tag, you are selecting a group of pins.  To add the imported pins with a tag \"Europe,\" for example, to your tags labelled \"Europe,\" select Merge.  Otherwise, select Rename Imported Tags.\n\nYou are free to edit tags names, after you have completed the import.  The edit button in the upper right corner of your screen.  \n\nTo merge manually: Rename tag to same name as the tag you wish to merge with, thus changing the tag attached to all corresponding pins.  Then delete it, leaving only one tag." delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles: @"Merge Tags", @"Rename Imported Tags", nil];
 
             [alert show];
 

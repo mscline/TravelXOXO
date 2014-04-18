@@ -28,14 +28,14 @@
   @property (strong, nonatomic) IBOutlet UIButton *selectAllButton;
   @property (strong, nonatomic) IBOutlet UIButton *deselectAllButton;
   @property (strong, nonatomic) IBOutlet UIButton *nwButton;
-  @property (strong, nonatomic) IBOutlet UIButton *editTagButton;
+  @property (strong, nonatomic) IBOutlet UIButton *renameTagButton;
   @property (strong, nonatomic) IBOutlet UIButton *deleteSelectedButton;
+  @property (strong, nonatomic) IBOutlet UIButton *convertToTrip;
 
   // subview buttons
   @property (strong, nonatomic) IBOutlet UIButton *cancelButton;
   @property (strong, nonatomic) IBOutlet UIButton *createNewTagButton;
   @property (strong, nonatomic) IBOutlet UIButton *saveButton;
-  @property (strong, nonatomic) IBOutlet UIButton *convertToTrip;
 
   // main view
   - (IBAction)backButtonPressed:(id)sender;
@@ -44,7 +44,7 @@
   - (IBAction)selectAllButtonPressed:(id)sender;
   - (IBAction)deselectAllButtonPressed:(id)sender;
   - (IBAction)nwButtonPressed:(id)sender;
-  - (IBAction)editButtonPressed:(id)sender;
+  - (IBAction)renameButtonPressed:(id)sender;
   - (IBAction)deleteSelectedTags:(id)sender;
 
   // subview
@@ -53,13 +53,14 @@
   - (IBAction)exitSubviewButtonPressed:(id)sender;
 
   // methods
+  -(void)selectFirstTag;
   -(void)deleteSelectedTagsFromMasterListAndMCLocations;
 //-(void)saveListOfTags;  in .h file
 
 @end
 
 @implementation MCSelectTagViewController
-  @synthesize listOfTags, tableOfTags, textFieldForEnteringNewTags, createTagOverlayView, delegate, backButton, cancelButton, titleLabel, selectAllButton, deselectAllButton, editTagButton, deleteSelectedButton, createNewTagButton, createTagSubview, saveButton, convertToTrip, tagBeingEdited, nwButton;
+  @synthesize listOfTags, tableOfTags, textFieldForEnteringNewTags, createTagOverlayView, delegate, backButton, cancelButton, titleLabel, selectAllButton, deselectAllButton, renameTagButton, deleteSelectedButton, createNewTagButton, createTagSubview, saveButton, convertToTrip, tagBeingEdited, nwButton;
 
 
 // delete selected tags, not working ??? (is it because saved sooner, or because never worked?
@@ -91,7 +92,6 @@
         [[NSMutableArray alloc] initWithObjects:backButton, 
                                                 cancelButton, 
                                                 convertToTrip,
-                                                editTagButton, 
                                                 titleLabel, nil] 
         fontSize:[delegate returnFontBig] 
         scaleFactorToConvertSizesFromIPhoneToIPad:[delegate returnScaleFactor]];
@@ -104,12 +104,13 @@
                                                 createNewTagButton, 
                                                 saveButton, 
                                                 nwButton,
+                                                renameTagButton,
                                                 nil] 
         fontSize:[delegate returnFontNormal]
         scaleFactorToConvertSizesFromIPhoneToIPad:[delegate returnScaleFactor]];
     
     
-    [self spaceObjectsEvenlyAlongXAxis:[NSMutableArray arrayWithObjects:selectAllButton, deleteSelectedButton, nwButton, deselectAllButton, nil]];
+    [self spaceObjectsEvenlyAlongXAxis:[NSMutableArray arrayWithObjects:selectAllButton, deleteSelectedButton, nwButton, deselectAllButton, renameTagButton, nil]];
     [self spaceObjectsEvenlyAlongXAxis: [NSMutableArray arrayWithObject: titleLabel]];
     [self spaceObjectsEvenlyAlongXAxis: [NSMutableArray arrayWithObjects: createNewTagButton, nil]];
     [self spaceObjectsEvenlyAlongXAxis: [NSMutableArray arrayWithObjects: saveButton, nil]];
@@ -117,13 +118,10 @@
     
     saveButton.hidden = TRUE;
     createNewTagButton.hidden = TRUE;
-    convertToTrip.hidden = TRUE;
     
     tableOfTags.frame = CGRectMake(tableOfTags.frame.origin.x, tableOfTags.frame.origin.y * [delegate returnScaleFactor], tableOfTags.frame.size.width, tableOfTags.frame.size.height);  // since already resized subviews manually, must turn off autoresize in storyboard which doesn't take care of things like fonts and lineHeight
-    
-    editTagButton.frame = CGRectMake(self.view.frame.size.width - editTagButton.frame.size.width - 15, editTagButton.frame.origin.y, editTagButton.frame.size.width, editTagButton.frame.size.width);
 
-    convertToTrip.frame = CGRectMake(self.view.frame.size.width - convertToTrip.frame.size.width - 15, convertToTrip.frame.origin.y, convertToTrip.frame.size.width, convertToTrip.frame.size.height);
+    convertToTrip.frame = CGRectMake(self.view.frame.size.width - backButton.frame.origin.x - convertToTrip.frame.size.width, backButton.frame.origin.y, convertToTrip.frame.size.width, convertToTrip.frame.size.height);
 }
 
 
@@ -165,6 +163,7 @@
 
     textFieldForEnteringNewTags.text = @"";
     
+    convertToTrip.hidden = TRUE;
     createTagOverlayView.hidden = FALSE;
     createTagSubview.hidden = FALSE;
 
@@ -172,8 +171,19 @@
 
 }
 
-- (IBAction)editButtonPressed:(id)sender {
+- (IBAction)renameButtonPressed:(id)sender {  
     
+    [self selectFirstTag];
+    
+    [tableOfTags reloadData];
+    createTagSubview.hidden = FALSE;
+    saveButton.hidden = FALSE;    
+    convertToTrip.hidden = TRUE;
+}
+
+-(void)selectFirstTag
+{
+
     // get first selected tag to edit
     
     tagBeingEdited = nil;
@@ -183,30 +193,24 @@
         if(tag.selected){
             
             tagBeingEdited = tag;
-            textFieldForEnteringNewTags.text = [tagBeingEdited.tagName substringWithRange:NSMakeRange(1, [tagBeingEdited.tagName length] - 2)]; 
+            textFieldForEnteringNewTags.text = [tagBeingEdited.tagName substringWithRange:NSMakeRange(1, [tagBeingEdited.tagName length] - 2)];
             break;
             
         }
     }
-
+    
     // deselect all tags
     
     for(MCTag *tag in listOfTags){
         
         if(tag != tagBeingEdited){
-
+            
             [tag setSelected:NO];
-        
+            
         }
         
-    }     
-    
-    [tableOfTags reloadData];
-    createTagSubview.hidden = FALSE;
-    saveButton.hidden = FALSE;    
-    convertToTrip.hidden = FALSE;
+    }
 }
-
 
 
 - (IBAction)deleteSelectedTags:(id)sender {
@@ -317,8 +321,6 @@
 
 #pragma mark Edit/Create Tags (in Subview)
 
-// - convertToTrip/editTrip Button segues directly to OrderTripVC (see storyboard)
-
 - (IBAction)createNewTagButtonPressed:(id)sender {
     
     // make sure text field isn't blank
@@ -392,7 +394,7 @@
     
     saveButton.hidden = TRUE;
     createNewTagButton.hidden = TRUE;
-    convertToTrip.hidden = TRUE;
+    convertToTrip.hidden = FALSE;
 
     [textFieldForEnteringNewTags resignFirstResponder];
     
@@ -465,6 +467,8 @@
 {
 
     if(sender == convertToTrip){
+        
+        [self selectFirstTag];
         
         MCOrderTripViewController *vc = segue.destinationViewController;
         vc.delegate = self;

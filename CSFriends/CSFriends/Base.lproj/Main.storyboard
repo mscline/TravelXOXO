@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0Tn-HN-LmT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="0Tn-HN-LmT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Sharing View Controller-->
@@ -140,16 +140,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="72U-DI-9Zd">
-                                        <rect key="frame" x="198" y="10" width="86" height="14"/>
+                                        <rect key="frame" x="73" y="10" width="60" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="+ Add Location"/>
+                                        <state key="normal" title="+ Add Pin"/>
                                         <connections>
                                             <segue destination="Ihr-uI-stK" kind="modal" id="loQ-6Q-x0C"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zKs-iS-mDe">
-                                        <rect key="frame" x="123" y="10" width="67" height="14"/>
+                                        <rect key="frame" x="207" y="10" width="67" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -161,25 +161,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mg7-U6-J0G">
-                                        <rect key="frame" x="0.0" y="10" width="50" height="14"/>
+                                        <rect key="frame" x="156" y="10" width="30" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Filters">
+                                        <state key="normal" title="Tags">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <segue destination="UY2-qC-Gr8" kind="modal" identifier="toSelectTagViewController" id="qf1-XK-Kkr"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Vd-aV-1bw">
-                                        <rect key="frame" x="40" y="10" width="82" height="14"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <state key="normal" title="Hide Map">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="viewFullListButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uSM-Aw-6zy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.49999999999999961" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" id="ra7-tJ-Tw6" userLabel="Options Button">
@@ -191,6 +180,17 @@
                                         </state>
                                         <connections>
                                             <action selector="pinOptionButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c0P-tO-oVA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7Vd-aV-1bw">
+                                        <rect key="frame" x="6" y="10" width="52" height="14"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <state key="normal" title="List View">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="viewFullListButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uSM-Aw-6zy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -453,7 +453,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CAQ-gU-Pfc">
-                                <rect key="frame" x="211" y="91" width="102" height="30"/>
+                                <rect key="frame" x="164" y="91" width="102" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="- Selected Tags">
@@ -464,7 +464,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1pc-Gc-XI0">
-                                <rect key="frame" x="15" y="91" width="49" height="30"/>
+                                <rect key="frame" x="8" y="91" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Select All">
@@ -475,7 +475,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="74q-GN-OZE">
-                                <rect key="frame" x="72" y="91" width="81" height="30"/>
+                                <rect key="frame" x="58" y="91" width="81" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Deselect All">
@@ -486,7 +486,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iJV-Af-Hs5">
-                                <rect key="frame" x="152" y="91" width="66" height="30"/>
+                                <rect key="frame" x="120" y="91" width="66" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="+ Tag">
@@ -497,13 +497,24 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ke3-um-ENC">
-                                <rect key="frame" x="266" y="24" width="34" height="14"/>
+                                <rect key="frame" x="256" y="91" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Edit">
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Rename">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="editButtonPressed:" destination="UY2-qC-Gr8" eventType="touchUpInside" id="bXW-z8-ATB"/>
+                                    <action selector="renameButtonPressed:" destination="UY2-qC-Gr8" eventType="touchUpInside" id="3W6-vZ-G92"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ics-1g-yxO">
+                                <rect key="frame" x="232" y="16" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Lines">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="euE-kb-Y5M" kind="modal" id="TyT-W8-QGj"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" id="okQ-bN-bmc" userLabel="View - CreateTagOverlayBocker">
@@ -542,16 +553,6 @@
                                             <action selector="createNewTagButtonPressed:" destination="UY2-qC-Gr8" eventType="touchUpInside" id="gZV-P1-deL"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ics-1g-yxO">
-                                        <rect key="frame" x="243" y="24" width="57" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Edit Trip">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="euE-kb-Y5M" kind="modal" id="TyT-W8-QGj"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="u0p-S4-TVv">
                                         <rect key="frame" x="33" y="89" width="34" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -582,8 +583,8 @@
                         <outlet property="createTagSubview" destination="Bdl-J8-vDa" id="jCS-E6-mhQ"/>
                         <outlet property="deleteSelectedButton" destination="CAQ-gU-Pfc" id="c9Y-kh-dXi"/>
                         <outlet property="deselectAllButton" destination="74q-GN-OZE" id="gas-Iw-IeI"/>
-                        <outlet property="editTagButton" destination="ke3-um-ENC" id="yFe-8U-uvG"/>
                         <outlet property="nwButton" destination="iJV-Af-Hs5" id="6pM-z1-DEY"/>
+                        <outlet property="renameTagButton" destination="ke3-um-ENC" id="3Wf-Uf-y5A"/>
                         <outlet property="saveButton" destination="u0p-S4-TVv" id="qPg-3m-hTe"/>
                         <outlet property="selectAllButton" destination="1pc-Gc-XI0" id="km3-bt-d25"/>
                         <outlet property="tableOfTags" destination="rvY-22-BrF" id="9pi-ch-9qo"/>
@@ -599,7 +600,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1782" y="-626"/>
+            <point key="canvasLocation" x="1749" y="-615"/>
         </scene>
         <!--Order Trip View Controller-->
         <scene sceneID="aJS-qP-xzh">
@@ -682,8 +683,8 @@
                                 <rect key="frame" x="0.0" y="410" width="320" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Trip on Map" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fWo-qC-5Uy">
-                                        <rect key="frame" x="35" y="40" width="153" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Display Trip Lines" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fWo-qC-5Uy">
+                                        <rect key="frame" x="44" y="40" width="135" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -778,7 +779,7 @@
                                                 <rect key="frame" x="0.0" y="158" width="320" height="216"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title/Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="30l-Zm-Oc1">
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="30l-Zm-Oc1">
                                                         <rect key="frame" x="20" y="0.0" width="64" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -791,7 +792,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle/Country:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mlv-Cj-Bah">
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mlv-Cj-Bah">
                                                         <rect key="frame" x="22" y="59" width="95" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -804,7 +805,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R9q-IS-4f1">
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="R9q-IS-4f1">
                                                         <rect key="frame" x="22" y="118" width="97" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
