@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD08057C18A0C7B4000F58DF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD08057B18A0C7B4000F58DF /* icon.png */; };
+		CD35EDF5184D0F4F0044DE8A /* MCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD35EDF4184D0F4F0044DE8A /* MCLoginViewController.m */; };
+		CD36E69518524E0700E82ABC /* MCSelectTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD36E69418524E0700E82ABC /* MCSelectTagViewController.m */; };
+		CD3F456A18865755004F454C /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = CD3F456918865755004F454C /* music.m4a */; };
+		CD3F456D1887D328004F454C /* MCOrderTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3F456C1887D328004F454C /* MCOrderTripViewController.m */; };
+		CD59DAF91856E5EA00DF29F3 /* MCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD59DAF81856E5EA00DF29F3 /* MCDetailViewController.m */; };
+		CD60C4491866D02600477D87 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD60C4481866D02600477D87 /* AVFoundation.framework */; };
+		CD9A54851846D68E003182E6 /* MCCheckMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD9A54841846D68E003182E6 /* MCCheckMapViewController.m */; };
+		CD9A57AE185101C300E4F082 /* greenPin.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9A57AC185101C300E4F082 /* greenPin.png */; };
+		CD9A57AF185101C300E4F082 /* redPin.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9A57AD185101C300E4F082 /* redPin.png */; };
+		CDA33F281847CE4800759059 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA33F271847CE4800759059 /* person.png */; };
+		CDA680C11846CE4800124889 /* MCAddPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA680C01846CE4800124889 /* MCAddPinViewController.m */; };
+		CDCA742B189AB91900E5F0DA /* MCArchiveFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCA742A189AB91900E5F0DA /* MCArchiveFileManager.m */; };
+		CDCA742E189ACEA700E5F0DA /* NSObject+MCShare.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCA742D189ACEA700E5F0DA /* NSObject+MCShare.m */; };
+		CDCCB123184D506300D3AE5C /* MCAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCCB122184D506300D3AE5C /* MCAnnotationView.m */; };
+		CDDEF68818467055002695D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF68718467055002695D2 /* Foundation.framework */; };
+		CDDEF68A18467055002695D2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF68918467055002695D2 /* CoreGraphics.framework */; };
+		CDDEF68C18467055002695D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF68B18467055002695D2 /* UIKit.framework */; };
+		CDDEF69218467055002695D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDDEF69018467055002695D2 /* InfoPlist.strings */; };
+		CDDEF69418467055002695D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDEF69318467055002695D2 /* main.m */; };
+		CDDEF69818467055002695D2 /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDEF69718467055002695D2 /* MCAppDelegate.m */; };
+		CDDEF69B18467055002695D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDEF69918467055002695D2 /* Main.storyboard */; };
+		CDDEF69E18467055002695D2 /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDEF69D18467055002695D2 /* MCViewController.m */; };
+		CDDEF6A718467055002695D2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF6A618467055002695D2 /* XCTest.framework */; };
+		CDDEF6A818467055002695D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF68718467055002695D2 /* Foundation.framework */; };
+		CDDEF6A918467055002695D2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF68B18467055002695D2 /* UIKit.framework */; };
+		CDDEF6B118467055002695D2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CDDEF6AF18467055002695D2 /* InfoPlist.strings */; };
+		CDDEF6B318467055002695D2 /* CSFriendsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDEF6B218467055002695D2 /* CSFriendsTests.m */; };
+		CDDEF6BD184670E9002695D2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF6BC184670E9002695D2 /* MapKit.framework */; };
+		CDDEF6C0184671EF002695D2 /* MCLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = CDDEF6BF184671EF002695D2 /* MCLocation.m */; };
+		CDE4BD241853AE28006CE5A4 /* MCTag.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE4BD231853AE28006CE5A4 /* MCTag.m */; };
+		CDF29D041874C539008CCA95 /* UIViewController+ResizingForDifferentDevices.m in Sources */ = {isa = PBXBuildFile; fileRef = CDF29D031874C539008CCA95 /* UIViewController+ResizingForDifferentDevices.m */; };
+		CDFAC4DC18A2B0A000833C83 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFAC4DB18A2B0A000833C83 /* Images-2.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDDEF6AA18467055002695D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDDEF67C18467055002695D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CDDEF68318467055002695D2;
+			remoteInfo = CSFriends;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD08057B18A0C7B4000F58DF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CD13A8DF184E769F00E2F642 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CD35EDF3184D0F4F0044DE8A /* MCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLoginViewController.h; sourceTree = "<group>"; };
+		CD35EDF4184D0F4F0044DE8A /* MCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLoginViewController.m; sourceTree = "<group>"; };
+		CD36E69318524E0700E82ABC /* MCSelectTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSelectTagViewController.h; sourceTree = "<group>"; };
+		CD36E69418524E0700E82ABC /* MCSelectTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSelectTagViewController.m; sourceTree = "<group>"; };
+		CD3F456918865755004F454C /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
+		CD3F456B1887D328004F454C /* MCOrderTripViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCOrderTripViewController.h; sourceTree = "<group>"; };
+		CD3F456C1887D328004F454C /* MCOrderTripViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCOrderTripViewController.m; sourceTree = "<group>"; };
+		CD59DAF71856E5EA00DF29F3 /* MCDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCDetailViewController.h; path = ../MCDetailViewController.h; sourceTree = "<group>"; };
+		CD59DAF81856E5EA00DF29F3 /* MCDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCDetailViewController.m; path = ../MCDetailViewController.m; sourceTree = "<group>"; };
+		CD60C4481866D02600477D87 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CD9A54831846D68E003182E6 /* MCCheckMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCCheckMapViewController.h; path = ../MCCheckMapViewController.h; sourceTree = "<group>"; };
+		CD9A54841846D68E003182E6 /* MCCheckMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCCheckMapViewController.m; path = ../MCCheckMapViewController.m; sourceTree = "<group>"; };
+		CD9A57AC185101C300E4F082 /* greenPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = greenPin.png; path = CSFriends/greenPin.png; sourceTree = "<group>"; };
+		CD9A57AD185101C300E4F082 /* redPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redPin.png; path = CSFriends/redPin.png; sourceTree = "<group>"; };
+		CDA33F271847CE4800759059 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = person.png; path = CSFriends/person.png; sourceTree = "<group>"; };
+		CDA680BF1846CE4800124889 /* MCAddPinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAddPinViewController.h; sourceTree = "<group>"; };
+		CDA680C01846CE4800124889 /* MCAddPinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAddPinViewController.m; sourceTree = "<group>"; };
+		CDCA7429189AB91900E5F0DA /* MCArchiveFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCArchiveFileManager.h; sourceTree = "<group>"; };
+		CDCA742A189AB91900E5F0DA /* MCArchiveFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCArchiveFileManager.m; sourceTree = "<group>"; };
+		CDCA742C189ACEA700E5F0DA /* NSObject+MCShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MCShare.h"; sourceTree = "<group>"; };
+		CDCA742D189ACEA700E5F0DA /* NSObject+MCShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MCShare.m"; sourceTree = "<group>"; };
+		CDCCB121184D506300D3AE5C /* MCAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCAnnotationView.h; sourceTree = "<group>"; };
+		CDCCB122184D506300D3AE5C /* MCAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCAnnotationView.m; sourceTree = "<group>"; };
+		CDDEF68418467055002695D2 /* CSFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDDEF68718467055002695D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDDEF68918467055002695D2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CDDEF68B18467055002695D2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDDEF68F18467055002695D2 /* CSFriends-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSFriends-Info.plist"; sourceTree = "<group>"; };
+		CDDEF69118467055002695D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDDEF69318467055002695D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CDDEF69518467055002695D2 /* CSFriends-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSFriends-Prefix.pch"; sourceTree = "<group>"; };
+		CDDEF69618467055002695D2 /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
+		CDDEF69718467055002695D2 /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		CDDEF69A18467055002695D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CDDEF69C18467055002695D2 /* MCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
+		CDDEF69D18467055002695D2 /* MCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
+		CDDEF6A518467055002695D2 /* CSFriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSFriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDDEF6A618467055002695D2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CDDEF6AE18467055002695D2 /* CSFriendsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSFriendsTests-Info.plist"; sourceTree = "<group>"; };
+		CDDEF6B018467055002695D2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CDDEF6B218467055002695D2 /* CSFriendsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSFriendsTests.m; sourceTree = "<group>"; };
+		CDDEF6BC184670E9002695D2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CDDEF6BE184671EF002695D2 /* MCLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLocation.h; sourceTree = "<group>"; };
+		CDDEF6BF184671EF002695D2 /* MCLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLocation.m; sourceTree = "<group>"; };
+		CDE4BD221853AE28006CE5A4 /* MCTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCTag.h; sourceTree = "<group>"; };
+		CDE4BD231853AE28006CE5A4 /* MCTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCTag.m; sourceTree = "<group>"; };
+		CDF29D021874C539008CCA95 /* UIViewController+ResizingForDifferentDevices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ResizingForDifferentDevices.h"; sourceTree = "<group>"; };
+		CDF29D031874C539008CCA95 /* UIViewController+ResizingForDifferentDevices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ResizingForDifferentDevices.m"; sourceTree = "<group>"; };
+		CDFAC4DB18A2B0A000833C83 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "CSFriends/Images-2.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDDEF68118467055002695D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD60C4491866D02600477D87 /* AVFoundation.framework in Frameworks */,
+				CDDEF6BD184670E9002695D2 /* MapKit.framework in Frameworks */,
+				CDDEF68A18467055002695D2 /* CoreGraphics.framework in Frameworks */,
+				CDDEF68C18467055002695D2 /* UIKit.framework in Frameworks */,
+				CDDEF68818467055002695D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDEF6A218467055002695D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDEF6A718467055002695D2 /* XCTest.framework in Frameworks */,
+				CDDEF6A918467055002695D2 /* UIKit.framework in Frameworks */,
+				CDDEF6A818467055002695D2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDA680BD1846C5E000124889 /* AppDelAndNavController */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEF69618467055002695D2 /* MCAppDelegate.h */,
+				CDDEF69718467055002695D2 /* MCAppDelegate.m */,
+				CD35EDF3184D0F4F0044DE8A /* MCLoginViewController.h */,
+				CD35EDF4184D0F4F0044DE8A /* MCLoginViewController.m */,
+			);
+			name = AppDelAndNavController;
+			path = CSFriends;
+			sourceTree = "<group>";
+		};
+		CDA8975418995842006CED6D /* BackupAndSharing */ = {
+			isa = PBXGroup;
+			children = (
+				CDCA7429189AB91900E5F0DA /* MCArchiveFileManager.h */,
+				CDCA742A189AB91900E5F0DA /* MCArchiveFileManager.m */,
+				CDCA742C189ACEA700E5F0DA /* NSObject+MCShare.h */,
+				CDCA742D189ACEA700E5F0DA /* NSObject+MCShare.m */,
+			);
+			name = BackupAndSharing;
+			path = CSFriends;
+			sourceTree = "<group>";
+		};
+		CDA89759189961A7006CED6D /* Controllers_WorkingWithTags */ = {
+			isa = PBXGroup;
+			children = (
+				CD36E69318524E0700E82ABC /* MCSelectTagViewController.h */,
+				CD36E69418524E0700E82ABC /* MCSelectTagViewController.m */,
+				CD3F456B1887D328004F454C /* MCOrderTripViewController.h */,
+				CD3F456C1887D328004F454C /* MCOrderTripViewController.m */,
+			);
+			name = Controllers_WorkingWithTags;
+			path = CSFriends;
+			sourceTree = "<group>";
+		};
+		CDCCB124184D556700D3AE5C /* DataObjectsAndViews */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEF69918467055002695D2 /* Main.storyboard */,
+				CDDEF6BE184671EF002695D2 /* MCLocation.h */,
+				CDDEF6BF184671EF002695D2 /* MCLocation.m */,
+				CDCCB121184D506300D3AE5C /* MCAnnotationView.h */,
+				CDCCB122184D506300D3AE5C /* MCAnnotationView.m */,
+				CDE4BD221853AE28006CE5A4 /* MCTag.h */,
+				CDE4BD231853AE28006CE5A4 /* MCTag.m */,
+			);
+			name = DataObjectsAndViews;
+			path = CSFriends;
+			sourceTree = "<group>";
+		};
+		CDD15D9D18949A120045FAC6 /* FontsAndScaling */ = {
+			isa = PBXGroup;
+			children = (
+				CDF29D021874C539008CCA95 /* UIViewController+ResizingForDifferentDevices.h */,
+				CDF29D031874C539008CCA95 /* UIViewController+ResizingForDifferentDevices.m */,
+			);
+			name = FontsAndScaling;
+			path = CSFriends;
+			sourceTree = "<group>";
+		};
+		CDDEF67B18467055002695D2 = {
+			isa = PBXGroup;
+			children = (
+				CDDEF68D18467055002695D2 /* Controllers_MainBranch */,
+				CDA89759189961A7006CED6D /* Controllers_WorkingWithTags */,
+				CDCCB124184D556700D3AE5C /* DataObjectsAndViews */,
+				CDA8975418995842006CED6D /* BackupAndSharing */,
+				CDA680BD1846C5E000124889 /* AppDelAndNavController */,
+				CDD15D9D18949A120045FAC6 /* FontsAndScaling */,
+				CDF23E84186E36E300D6E4F4 /* DataFiles */,
+				CDDEF68E18467055002695D2 /* Plist and Supporting Files */,
+				CDDEF6AC18467055002695D2 /* CSFriendsTests */,
+				CDDEF68618467055002695D2 /* Frameworks */,
+				CDDEF68518467055002695D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CDDEF68518467055002695D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEF68418467055002695D2 /* CSFriends.app */,
+				CDDEF6A518467055002695D2 /* CSFriendsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDDEF68618467055002695D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD60C4481866D02600477D87 /* AVFoundation.framework */,
+				CD13A8DF184E769F00E2F642 /* SystemConfiguration.framework */,
+				CDDEF6BC184670E9002695D2 /* MapKit.framework */,
+				CDDEF68718467055002695D2 /* Foundation.framework */,
+				CDDEF68918467055002695D2 /* CoreGraphics.framework */,
+				CDDEF68B18467055002695D2 /* UIKit.framework */,
+				CDDEF6A618467055002695D2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDDEF68D18467055002695D2 /* Controllers_MainBranch */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEF69C18467055002695D2 /* MCViewController.h */,
+				CDDEF69D18467055002695D2 /* MCViewController.m */,
+				CD59DAF71856E5EA00DF29F3 /* MCDetailViewController.h */,
+				CD59DAF81856E5EA00DF29F3 /* MCDetailViewController.m */,
+				CDA680BF1846CE4800124889 /* MCAddPinViewController.h */,
+				CDA680C01846CE4800124889 /* MCAddPinViewController.m */,
+				CD9A54831846D68E003182E6 /* MCCheckMapViewController.h */,
+				CD9A54841846D68E003182E6 /* MCCheckMapViewController.m */,
+			);
+			name = Controllers_MainBranch;
+			path = CSFriends;
+			sourceTree = "<group>";
+		};
+		CDDEF68E18467055002695D2 /* Plist and Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEF68F18467055002695D2 /* CSFriends-Info.plist */,
+				CDDEF69018467055002695D2 /* InfoPlist.strings */,
+				CDDEF69318467055002695D2 /* main.m */,
+				CDDEF69518467055002695D2 /* CSFriends-Prefix.pch */,
+			);
+			name = "Plist and Supporting Files";
+			path = CSFriends;
+			sourceTree = "<group>";
+		};
+		CDDEF6AC18467055002695D2 /* CSFriendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEF6B218467055002695D2 /* CSFriendsTests.m */,
+				CDDEF6AD18467055002695D2 /* Supporting Files */,
+			);
+			path = CSFriendsTests;
+			sourceTree = "<group>";
+		};
+		CDDEF6AD18467055002695D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEF6AE18467055002695D2 /* CSFriendsTests-Info.plist */,
+				CDDEF6AF18467055002695D2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDF23E84186E36E300D6E4F4 /* DataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CDFAC4DB18A2B0A000833C83 /* Images-2.xcassets */,
+				CD3F456918865755004F454C /* music.m4a */,
+				CD08057B18A0C7B4000F58DF /* icon.png */,
+				CDA33F271847CE4800759059 /* person.png */,
+				CD9A57AC185101C300E4F082 /* greenPin.png */,
+				CD9A57AD185101C300E4F082 /* redPin.png */,
+			);
+			name = DataFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CDDEF68318467055002695D2 /* CSFriends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDDEF6B618467055002695D2 /* Build configuration list for PBXNativeTarget "CSFriends" */;
+			buildPhases = (
+				CDDEF68018467055002695D2 /* Sources */,
+				CDDEF68118467055002695D2 /* Frameworks */,
+				CDDEF68218467055002695D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSFriends;
+			productName = CSFriends;
+			productReference = CDDEF68418467055002695D2 /* CSFriends.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CDDEF6A418467055002695D2 /* CSFriendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDDEF6B918467055002695D2 /* Build configuration list for PBXNativeTarget "CSFriendsTests" */;
+			buildPhases = (
+				CDDEF6A118467055002695D2 /* Sources */,
+				CDDEF6A218467055002695D2 /* Frameworks */,
+				CDDEF6A318467055002695D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDDEF6AB18467055002695D2 /* PBXTargetDependency */,
+			);
+			name = CSFriendsTests;
+			productName = CSFriendsTests;
+			productReference = CDDEF6A518467055002695D2 /* CSFriendsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDDEF67C18467055002695D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = xcode;
+				TargetAttributes = {
+					CDDEF68318467055002695D2 = {
+						DevelopmentTeam = BCB9VVWZ7H;
+					};
+					CDDEF6A418467055002695D2 = {
+						TestTargetID = CDDEF68318467055002695D2;
+					};
+				};
+			};
+			buildConfigurationList = CDDEF67F18467055002695D2 /* Build configuration list for PBXProject "CSFriends" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDDEF67B18467055002695D2;
+			productRefGroup = CDDEF68518467055002695D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDDEF68318467055002695D2 /* CSFriends */,
+				CDDEF6A418467055002695D2 /* CSFriendsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDDEF68218467055002695D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDFAC4DC18A2B0A000833C83 /* Images-2.xcassets in Resources */,
+				CD3F456A18865755004F454C /* music.m4a in Resources */,
+				CD9A57AF185101C300E4F082 /* redPin.png in Resources */,
+				CDDEF69218467055002695D2 /* InfoPlist.strings in Resources */,
+				CD08057C18A0C7B4000F58DF /* icon.png in Resources */,
+				CDDEF69B18467055002695D2 /* Main.storyboard in Resources */,
+				CD9A57AE185101C300E4F082 /* greenPin.png in Resources */,
+				CDA33F281847CE4800759059 /* person.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDEF6A318467055002695D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDEF6B118467055002695D2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDDEF68018467055002695D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE4BD241853AE28006CE5A4 /* MCTag.m in Sources */,
+				CDDEF6C0184671EF002695D2 /* MCLocation.m in Sources */,
+				CDDEF69818467055002695D2 /* MCAppDelegate.m in Sources */,
+				CD59DAF91856E5EA00DF29F3 /* MCDetailViewController.m in Sources */,
+				CD35EDF5184D0F4F0044DE8A /* MCLoginViewController.m in Sources */,
+				CDDEF69E18467055002695D2 /* MCViewController.m in Sources */,
+				CD9A54851846D68E003182E6 /* MCCheckMapViewController.m in Sources */,
+				CD36E69518524E0700E82ABC /* MCSelectTagViewController.m in Sources */,
+				CDDEF69418467055002695D2 /* main.m in Sources */,
+				CDF29D041874C539008CCA95 /* UIViewController+ResizingForDifferentDevices.m in Sources */,
+				CDA680C11846CE4800124889 /* MCAddPinViewController.m in Sources */,
+				CDCA742E189ACEA700E5F0DA /* NSObject+MCShare.m in Sources */,
+				CDCA742B189AB91900E5F0DA /* MCArchiveFileManager.m in Sources */,
+				CDCCB123184D506300D3AE5C /* MCAnnotationView.m in Sources */,
+				CD3F456D1887D328004F454C /* MCOrderTripViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CDDEF6A118467055002695D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDDEF6B318467055002695D2 /* CSFriendsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CDDEF6AB18467055002695D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CDDEF68318467055002695D2 /* CSFriends */;
+			targetProxy = CDDEF6AA18467055002695D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CDDEF69018467055002695D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDDEF69118467055002695D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CDDEF69918467055002695D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDDEF69A18467055002695D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CDDEF6AF18467055002695D2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CDDEF6B018467055002695D2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CDDEF6B418467055002695D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CDDEF6B518467055002695D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CDDEF6B718467055002695D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSFriends/CSFriends-Prefix.pch";
+				INFOPLIST_FILE = "CSFriends/CSFriends-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CDDEF6B818467055002695D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSFriends/CSFriends-Prefix.pch";
+				INFOPLIST_FILE = "CSFriends/CSFriends-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CDDEF6BA18467055002695D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CSFriends.app/CSFriends";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSFriends/CSFriends-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CSFriendsTests/CSFriendsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CDDEF6BB18467055002695D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CSFriends.app/CSFriends";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSFriends/CSFriends-Prefix.pch";
+				INFOPLIST_FILE = "CSFriendsTests/CSFriendsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDDEF67F18467055002695D2 /* Build configuration list for PBXProject "CSFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDDEF6B418467055002695D2 /* Debug */,
+				CDDEF6B518467055002695D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDDEF6B618467055002695D2 /* Build configuration list for PBXNativeTarget "CSFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDDEF6B718467055002695D2 /* Debug */,
+				CDDEF6B818467055002695D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDDEF6B918467055002695D2 /* Build configuration list for PBXNativeTarget "CSFriendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDDEF6BA18467055002695D2 /* Debug */,
+				CDDEF6BB18467055002695D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDDEF67C18467055002695D2 /* Project object */;
+}
